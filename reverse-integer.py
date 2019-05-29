@@ -37,7 +37,7 @@ class Solution:
 		return r
 
 # Looking to the discussion section, I found a golfer! Here was his solution:
-Class Solution:
+class Solution:
 	def reverse(self, x):
 		s = cmp(x,0)
 		r = int(`s*x`[::-1])
