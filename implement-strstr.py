@@ -26,7 +26,7 @@ solution I come up with.
 
 class Solution
 	def strStr(self, haystack: str, needle: str) -> int:
-		# First thought - I'd like to keep my loop code clean, so /
+		# First thought - I'd like to keep my loop code clean, so 
 		# I'll grab the length of both strings.
 		hlen = len(haystack)
 		nlen = len(needle)
@@ -35,14 +35,14 @@ class Solution
 		if nlen == 0 or haystack == needle:
 			return 0
 
-		# I'll need a pointer to move through haystack, starting at 0. /
+		# I'll need a pointer to move through haystack, starting at 0. 
 		# I'll initiate the pointer for needle in the main loop.
 		hp = 0
 
-		# I'll move through haystack, comparing each letter to the first /
-		# letter of needle. If there's a match, I'll keep comparing until /
-		# we reach the end of needle or there's not a match, in which case /
-		# I'll continue looking through haystack. If we've reached /
+		# I'll move through haystack, comparing each letter to the first 
+		# letter of needle. If there's a match, I'll keep comparing until 
+		# we reach the end of needle or there's not a match, in which case 
+		# I'll continue looking through haystack. If we've reached 
 		# hlen - nlen without finding a match, return -1.
 		
 		while hp < hlen - nlen:
